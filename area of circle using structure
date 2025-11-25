@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct circle {
+    float radius;
+    float area;
+};
+
+int main() {
+    struct circle c;
+    float pi = 3.14159;
+
+    // Input radius
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &c.radius);
+
+    // Calculate area
+    c.area = pi * c.radius * c.radius;
+
+    // Display result
+    printf("Area of the circle = %.2f\n", c.area);
+
+    return 0;
+}
